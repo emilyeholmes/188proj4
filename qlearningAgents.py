@@ -75,8 +75,6 @@ class QLearningAgent(ReinforcementAgent):
               maxV = self.getQValue(state, a)
           return maxV
 
-        #util.raiseNotDefined()
-
     def computeActionFromQValues(self, state):
         """
           Compute the best action to take in a state.  Note that if there
@@ -93,7 +91,6 @@ class QLearningAgent(ReinforcementAgent):
             if self.getQValue(state,a) == maxV:
               poss.append(a)
           return random.choice(poss)
-        #util.raiseNotDefined()
 
     def getAction(self, state):
         """
