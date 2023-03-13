@@ -115,7 +115,7 @@ class QLearningAgent(ReinforcementAgent):
         if choice:
           action = random.choice(legalActions)
         else:
-          action = self.computeActionFromQValues()
+          action = self.computeActionFromQValues(state)
         #util.raiseNotDefined()
         "*** END MY CODE HERE ***"
         return action
